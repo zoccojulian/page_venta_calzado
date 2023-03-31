@@ -15,7 +15,11 @@ let fotoCarrouselNumero = 0;
  * con whattsapp con el nombre del producto que le pasemos
  */
 const hrefWhattsapp = ( nombre ) => {
-    return `https://api.whatsapp.com/send?phone=5491130457469&text=¡Hola! Estoy en la página de SIMINA BA y quiero pedir más información sobre las - ${nombre} -`;
+    // return `https://api.whatsapp.com/send?phone=[54911numero]&text=¡Hola! Estoy en la página de SIMINA BA y quiero pedir más información sobre las - ${nombre} -`;
+    /**El return de arriba devuelve el href para cada producto con el nombre del mismo,
+     * hay que agregarle el numero
+     */
+    return `error.html`
 }
 
 /**

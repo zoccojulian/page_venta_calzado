@@ -1,0 +1,39 @@
+.body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.body .container {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(155, 253, 102);
+  border-radius: 15px;
+}
+.body .container .titulo {
+  font-size: 2rem;
+}
+.body .container .boton {
+  width: 100px;
+  height: 50px;
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.838);
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  filter: drop-shadow(5px 5px 1px);
+}
+.body .container .boton:active {
+  filter: none;
+}
+
+/*# sourceMappingURL=error.css.map */

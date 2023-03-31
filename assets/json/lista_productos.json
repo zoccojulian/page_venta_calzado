@@ -105,7 +105,7 @@
         "talles" : [],
         "precioAntes": "",
         "precioAhora": "",
-        "fecha_ingreso" : "09/13/2022",
+        "fecha_ingreso" : "31/03/2023",
         "carpeta" : "SANDALS",
         "fotos": ["sandals01.jpg","sandals02.jpg","sandals03.jpg"]
     },
@@ -116,7 +116,7 @@
         "talles" : [],
         "precioAntes": "",
         "precioAhora": "",
-        "fecha_ingreso" : "09/13/2022",
+        "fecha_ingreso" : "31/03/2023",
         "carpeta" : "SHADOW",
         "fotos": ["shadow01.jpg","shadow02.jpg"]
     },
@@ -127,7 +127,7 @@
         "talles" : [],
         "precioAntes": "",
         "precioAhora": "",
-        "fecha_ingreso" : "09/13/2022",
+        "fecha_ingreso" : "31/03/2023",
         "carpeta" : "SIX",
         "fotos": ["six01.jpg","six02.jpg","six03.jpg"]
     },
@@ -233,10 +233,10 @@
     {
         "id": 22,
         "nombre" : "SIMONA",
-        "stock" : false,
-        "talles" : [],
-        "precioAntes": "",
-        "precioAhora": "",
+        "stock" : true,
+        "talles" : [36,37,38],
+        "precioAntes": "7420",
+        "precioAhora": "5600",
         "fecha_ingreso" : "10/03/2022",
         "carpeta" : "SIMONA",
         "fotos": ["Simona01.jpg", "Simona02.jpg", "Simona03.jpg", "Simona04.jpg"]
@@ -244,10 +244,10 @@
     {
         "id": 23,
         "nombre" : "ZAIRA",
-        "stock" : false,
-        "talles" : [],
-        "precioAntes": "",
-        "precioAhora": "",
+        "stock" : true,
+        "talles" : [35,38],
+        "precioAntes": "5900",
+        "precioAhora": "3500",
         "fecha_ingreso" : "10/03/2022",
         "carpeta" : "ZAIRA",
         "fotos": ["Zaira01.jpg", "Zaira02.jpg", "Zaira03.jpg", "Zaira04.jpg"]
