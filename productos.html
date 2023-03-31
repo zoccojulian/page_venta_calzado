@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simina Shoes</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/productos_page.css">
+    
+</head>
+<body class="body" id="home">
+    <div class="cargando">
+        <div class="animacion__charge">
+            <script type="module" src="./js/animacionCargando.js"></script>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__hamburger"></div>
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="./assets/logos/Logo_Simina.png" alt="">
+            </a>
+        </div>
+        <div class="header__lista__container">
+            <div class="imagen__logo">
+                <img src="./assets/logos/Logo_Simina.png" alt="">
+            </div>
+            <ul class="header__lista">
+                <li class="header__lista__item lista__item"><a href="index.html"><i class="bi bi-house-heart-fill"></i></a></li>
+                <li class="header__lista__item lista__item"><a href="productos.html?card=productos">Nuestros Productos</a></li>
+                <li class="header__lista__item lista__item header__sale"><a href="productos.html?card=sale">SALE</a></li>
+                <li class="header__lista__item lista__item"><a href="index.html?id=comoComprar">Como Comprar</a></li>
+                <li class="header__lista__item lista__item"><a href="index.html?id=formaDePago">Forma de Pago</a></li>
+                <li class="header__lista__item lista__item"><a href="index.html?id=entregas">Entregas</a></li>
+                <li class="header__lista__item lista__item"><a href="index.html?id=preguntas">Preguntas Frecuentes</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="producto__elegido">
+            <!--SE CARGAN DESDE JS-->
+        </section>
+        <section class="productos" id="productos">
+            <div class="productos__titulo">
+                <!-- <h2>NUESTROS <b>PRODUCTOS</b></h2> -->
+            </div>
+            <div class="productos__container" id="productos__container">
+                <!--SE CARGAN DESDE JS-->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__empresa">
+            <div class="contactos__whattsapp">
+                <a href="https://api.whatsapp.com/send?phone=5491130457469&text=¡Hola! Estoy en la página de SIMINA BA y quiero pedir más información sobre los productos">
+                    <img src="./assets/img/icons/ws.png" alt="">
+                </a>
+            </div>
+            <div class="footer__menu">
+                <ul class="footer__lista">
+                    <li class="footer__lista__item lista__item"><a href="index.html"><i class="bi bi-house-heart-fill"></i></a></li>
+                    <li class="footer__lista__item lista__item"><a href="productos.html?card=productos">Nuestros Productos</a></li>
+                    <li class="footer__lista__item lista__item footer__sale"><a href="productos.html?card=sale">SALE</a></li>
+                    <li class="footer__lista__item lista__item"><a href="index.html?id=comoComprar">Como Comprar</a></li>
+                    <li class="footer__lista__item lista__item"><a href="index.html?id=formaDePago">Forma de Pago</a></li>
+                    <li class="footer__lista__item lista__item"><a href="index.html?id=entregas">Entregas</a></li>
+                    <li class="footer__lista__item lista__item"><a href="index.html?id=preguntas">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="footer__contactos">
+                <div class="contactos__titulo">
+                    <span>CONTACTOS</span>
+                </div>
+                <div class="contactos__container">
+                    <a href="#" class="contact contactos__instagram">
+                        <i class="bi bi-instagram"></i>
+                        <span>INSTAGRAM</span>
+                    </a>
+                    <a href="#" class="contact contactos__telefono">
+                        <i class="bi bi-telephone"></i>
+                        <span>TELEFONO</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="footer__dev">
+            <span>Desarrollado por <b>JULIAN ZOCCO</b></span>
+            <div class="dev__contact">
+                <a href="https://www.linkedin.com/in/julian-zocco/"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/zoccojulian"><i class="bi bi-github"></i></a>
+            </div>
+        </section>
+    </footer>
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js" integrity="sha512-yAr4fN9WZH6hESbOwoFZGtSgOP+LSZbs/JeoDr02pOX4yUFfI++qC9YwIQXIGffhnzliykJtdWTV/v3PxSz8aw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/productos.js" type="module"></script>
+<script src="./js/boton_menu.js" type="module"></script>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simina Shoes</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    
+</head>
+<body class="body" id="home">
+    <div class="cargando">
+        <div class="animacion__charge">
+            <script type="module" src="./js/animacionCargando.js"></script>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__hamburger"></div>
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="./assets/logos/Logo_Simina.png" alt="">
+            </a>
+        </div>
+        <div class="header__lista__container">
+            <div class="imagen__logo">
+                <img src="./assets/logos/Logo_Simina.png" alt="">
+            </div>
+            <ul class="header__lista">
+                <li class="header__lista__item lista__item"><a href="#home"><i class="bi bi-house-heart-fill"></i></a></li>
+                <li class="header__lista__item lista__item"><a href="#productos">Nuestros Productos</a></li>
+                <li class="header__lista__item lista__item header__sale"><a href="#sale">SALE</a></li>
+                <li class="header__lista__item lista__item"><a href="#comoComprar">Como Comprar</a></li>
+                <li class="header__lista__item lista__item"><a href="#formaDePago">Forma de Pago</a></li>
+                <li class="header__lista__item lista__item"><a href="#entregas">Envíos</a></li>
+                <li class="header__lista__item lista__item"><a href="#preguntas">Preguntas Frecuentes</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main">
+        <h1 class="name">Simina Shoes</h1>
+        <section class="banner">
+            <div class="banner__container">
+                <div class="banner__flecha">
+                </div>
+                <div class="banner__img"></div>
+            </div>
+        </section>
+        <section class="productos" id="productos">
+            <div class="productos__titulo">
+                <h2>NUESTROS <b>PRODUCTOS</b></h2>
+            </div>
+            <div class="productos__container" id="productos__container">
+                <!--SE CARGAN DESDE JS-->
+            </div>
+            <div class="productos__link">
+                    <a href="productos.html?card=productos">
+                        <div class="flecha" id="flecha__productos">
+                        </div>
+                        VER TODOS
+                    </a>
+                </div>
+        </section>
+        <section class="sale" id="sale">
+            <div class="sale__titulo">
+                <h2><b>SALE</b></h2>
+            </div>
+            <div class="productos__container" id="sale__container">
+                <!--SE CARGA DESDE JS-->
+            </div>
+            <div class="productos__link">
+                <a href="productos.html?card=sale">
+                    <div class="flecha" id="flecha__sale"></div>
+                    VER TODOS
+                </a>
+            </div>
+        </section>
+        <section class="comoComprar" id="comoComprar">
+            <div class="comoComprar__titulo">
+                <h2>COMO <b>COMPRAR</b></h2>
+            </div>
+            <div class="comoComprar__container">
+                <div class="comoComprar__imagen">
+                    <img src="./assets/img/graphic/como_comprar/comprar_fondo.png" alt="">
+                    <div class="comoComprar__anim"></div>
+                    <img src="./assets/img/graphic/como_comprar/comprar.png" alt="">
+                </div>
+                <div class="comoComprar__descripcion">
+                    <h3><i class="bi bi-check-all"></i> Elegí el que más <b>te gusta!</b>.</h3>
+                    <h3><i class="bi bi-check-all"></i> Mandanos un mensaje por <b>Whattsapp</b>.</h3>
+                    <h3><i class="bi bi-check-all"></i> Los productos tienen un minimo de preparación de <b>10 a 15 días</b>.</h3>
+                    <h3><i class="bi bi-check-all"></i> Luego de ese periodo, realizamos la <b>entrega o envío</b>.</h3>
+                    <h3><i class="bi bi-check-all"></i> <b>Y a disfrutar!!</b>.</h3>
+                </div>
+            </div>
+        </section>
+        <section class="pagos" id="formaDePago">
+            <div class="pagos__titulo">
+                <h2>FORMAS DE <b>PAGO</b></h2>
+            </div>
+            <div class="pagos__container">
+                <div class="pagos__imagen">
+                    <img src="./assets/img/graphic/pagos/pagos_fondo.png" alt="">
+                    <div class="pagos__anim"></div>
+                    <img src="./assets/img/graphic/pagos/pagos_mujer.png" alt="">
+                </div>
+                <div class="pagos__descripcion">
+                    <h3><i class="bi bi-cash-coin"></i> <b>Efectivo</b></h3>
+                    <h3><i class="bi bi-bank"></i> <b>Transferencia Bancaria</b></h3>
+                    <h3><i class="bi bi-phone-vibrate-fill"></i> <b>Mercado Pago</b></h3>
+                    <h3><i class="bi bi-wallet2"></i> <b>Pago Fácil - Rapipago</b></h3>
+                </div>
+            </div>
+            <div class="pagos__aviso">
+                <div class="aviso__icon">
+                    <i class="bi bi-megaphone-fill"></i>
+                </div>
+                <div class="aviso__descripcion">
+                    <p>En <b>envíos por correo</b> el pago se realiza de <b>forma anticipada</b>.</p>
+                    <p>En <b>entregas a domicilio</b> se puede abonar <b>contra-entrega</b> en Efectivo, Virtual o Transferencia Inmediata.</p>
+                </div>
+            </div>
+        </section>
+        <section class="envios" id="entregas">
+            <div class="envios__titulo">
+                <h2>METODOS DE <b>ENVÍO</b></h2>
+            </div>
+            <div class="envios__container">
+                <div class="envios__imagen">
+                    <div class="envios__anim"></div>
+                    <img src="./assets/img/graphic/moto/moto.png" alt="">
+                </div>
+                <div class="envios__descripcion">
+                    <h3><i class="bi bi-truck"></i><b>  ENTREGAS:</b> a domicilio en <b>C.A.B.A y Conurbano Bonaerense</b>.</h3>
+                    <h3><i class="bi bi-mailbox2"></i><b> ENVÍOS:</b> por correo a todo el país para retirar en <b>sucursal del Correo Argentino más cercana a tu domicilio</b>.</h3>
+                </div>
+            </div>
+        </section>
+        <section class="preguntas" id="preguntas">
+            <div class="preguntas__titulo">
+                <h2>PREGUNTAS <b>FRECUENTES</b></h2>
+            </div>
+            <div class="preguntas__container">
+                <ul class="preguntas__lista">
+                    <li class="preguntas__item">
+                        <div class="pregunta__titulo">
+                            <span class="pregunta__titulo__texto">¿Qué formas de pago puedo aprovechar para realizar mi compra?</span>
+                            <div class="pregunta__titulo__boton"></div>
+                        </div>
+                        <div class="pregunta__respuesta respuesta__out">
+                            <p>Disponemos de los siguientes medios de pago para que puedas realizar tu compra de manera segura:</p>
+                            <p>- MercadoPago ( con tarjeta de Crédito y Débito o transferencia).</p>
+                            <p>- Pago Fácil / Rapipago.</p>
+                            <p>- Trasferencia Bancaria ( en caso de ser un envío por correo se abona antes de realizar el envío)</p>
+                            <p>- Pago en efectivo.</p>
+                            <p><b>IMPORTANTE:</b> En el caso de envíos por correo, se abona el total de la compra (producto + envío) antes de despachar el pedido</p>
+                        </div>
+                    </li>
+                    <li class="preguntas__item">
+                        <div class="pregunta__titulo">
+                            <span class="pregunta__titulo__texto">¿Cuál es el costo de envío?</span>
+                            <div class="pregunta__titulo__boton"></div>
+                        </div>
+                        <div class="pregunta__respuesta respuesta__out">
+                            <p>El costo de envío será calculado en base al total de la compra y ubicación.</p>
+                            <p>Preguntanos por whattsapp el precio a tu destino.</p>
+                        </div>
+                    </li>
+                    <li class="preguntas__item">
+                        <div class="pregunta__titulo">
+                            <span class="pregunta__titulo__texto">¿Cómo se realizan los envíos?</span>
+                            <div class="pregunta__titulo__boton"></div>
+                        </div>
+                        <div class="pregunta__respuesta respuesta__out">
+                            <p>Te lo podemos entregar dentro de Capital Federal y el AMBA. Fuera de ésta área, se envían por CORREO ARGENTINO para que lo retires en la SUCURSAL más cercana a tu domicilio.</p>
+                        </div>
+                    </li>
+                    <li class="preguntas__item">
+                        <div class="pregunta__titulo">
+                            <span class="pregunta__titulo__texto">¿Cuánto tarda en llegar el pedido?</span>
+                            <div class="pregunta__titulo__boton"></div>
+                        </div>
+                        <div class="pregunta__respuesta respuesta__out">
+                            <p>El tiempo de entrega dependerá del tipo de envío seleccionado y de la provincia o localidad. Los productos se despachan a partir de los 10 a 15 días de hecho el pedido.</p>
+                        </div>
+                    </li>
+                    <li class="preguntas__item">
+                        <div class="pregunta__titulo">
+                            <span class="pregunta__titulo__texto">Política de cambios</span>
+                            <div class="pregunta__titulo__boton"></div>
+                        </div>
+                        <div class="pregunta__respuesta respuesta__out">
+                            <p>Los cambios se realizan únicamente por talle.</p>
+                            <p><b>IMPORTANTE:</b> para realizar un cambio con envío/entrega, los cargos del mismo (tanto del traslado de la devolución del producto como del envío del nuevo producto) corren por cuenta del comprador. Cuando recibimos el producto para el cambio, a los 10 días, hacemos el envío del cambio.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__empresa">
+            <div class="contactos__whattsapp">
+                <a href="https://api.whatsapp.com/send?phone=5491130457469&text=¡Hola! Estoy en la página de SIMINA BA y quiero pedir más información sobre los productos">
+                    <img src="./assets/img/icons/ws.png" alt="">
+                </a>
+            </div>
+            <div class="footer__menu">
+                <ul class="footer__lista">
+                    <li class="footer__lista__item lista__item"><a href="#home"><i class="bi bi-house-heart-fill"></i></a></li>
+                    <li class="footer__lista__item lista__item"><a href="#productos">Nuestros Productos</a></li>
+                    <li class="footer__lista__item lista__item footer__sale"><a href="#sale">SALE</a></li>
+                    <li class="footer__lista__item lista__item"><a href="#comoComprar">Como Comprar</a></li>
+                    <li class="footer__lista__item lista__item"><a href="#formaDePago">Forma de Pago</a></li>
+                    <li class="footer__lista__item lista__item"><a href="#entregas">Envíos</a></li>
+                    <li class="footer__lista__item lista__item"><a href="#preguntas">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="footer__contactos">
+                <div class="contactos__titulo">
+                    <span>CONTACTOS</span>
+                </div>
+                <div class="contactos__container">
+                    <a href="https://www.instagram.com/simina_ba/" class="contact contactos__instagram">
+                        <i class="bi bi-instagram"></i>
+                        <span>INSTAGRAM</span>
+                    </a>
+                    <a href="tel:01130457469" class="contact contactos__telefono">
+                        <i class="bi bi-telephone"></i>
+                        <span>TELEFONO</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="footer__dev">
+            <span>Desarrollado por <b>JULIAN ZOCCO</b></span>
+            <div class="dev__contact">
+                <a href="https://www.linkedin.com/in/julian-zocco/"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/zoccojulian"><i class="bi bi-github"></i></a>
+            </div>
+        </section>
+    </footer>
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js" integrity="sha512-yAr4fN9WZH6hESbOwoFZGtSgOP+LSZbs/JeoDr02pOX4yUFfI++qC9YwIQXIGffhnzliykJtdWTV/v3PxSz8aw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+<script src="./js/app.js" type="module"></script>
+<script src="./js/boton_menu.js" type="module"></script>
+</html>

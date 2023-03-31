@@ -1,0 +1,43 @@
+@use '../util/mixins';
+@use '../util/colors';
+@use 'sass:color';
+
+.envios{
+    // margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../assets/img/fondos/fondo01.png');
+    background-position: center;
+    background-size: cover;
+    .envios__titulo{
+        @include mixins.section-titulo;
+    }
+
+    .envios__container{
+        .envios__imagen{
+            @include mixins.imagenes-animadas;
+        }
+    
+        .envios__descripcion{
+            @include mixins.descripcion-secciones;
+
+        }
+    }
+
+    
+}
+
+@media only screen and ( min-width:768px ){
+    .envios{
+
+        .envios__container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .envios__imagen{
+                width: 45%;
+            }
+        }
+    }
+}

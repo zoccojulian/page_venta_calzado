@@ -1,0 +1,79 @@
+@use '../util/mixins';
+@use '../util/colors';
+@use 'sass:color';
+
+.pagos{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    .pagos__titulo{
+        @include mixins.section-titulo;
+        h2{
+            b{
+                color: colors.$oscuro;
+            }
+        }
+    }
+
+    .pagos__container{
+
+        .pagos__imagen{
+            @include mixins.imagenes-animadas;
+        }
+
+        .pagos__descripcion{
+            @include mixins.descripcion-secciones;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            h3{
+                color: colors.$oscuro;
+            }
+        }
+    }
+
+    .pagos__aviso{
+        padding: 1rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: colors.$principal;
+        .aviso__icon{
+            font-size: 2.5rem;
+            color: colors.$claro;
+        }
+        .aviso__descripcion{
+            color: colors.$claro;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+    }
+
+    
+}
+
+@media only screen and ( min-width:768px ){
+    .pagos{
+
+        .pagos__container{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            .pagos__imagen{
+                width: 45%;
+            }
+        }
+
+        .pagos__aviso{
+            .aviso__icon{
+                font-size: 3.5rem;
+            }
+            .aviso__descripcion{
+                font-size: 2rem;
+            }
+        }
+    }
+}

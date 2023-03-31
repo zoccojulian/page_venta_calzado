@@ -1,0 +1,13 @@
+.productos__container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and ( min-width:576px ){
+    .productos__container{
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,100 @@
+@use '../util/mixins';
+@use '../util/colors';
+@use 'sass:color';
+
+
+.preguntas{
+    display: flex;
+    flex-direction: column;
+    .preguntas__titulo{
+        @include mixins.section-titulo;
+    }
+
+    .preguntas__container{
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+        padding: 1rem;
+
+        .preguntas__lista{
+
+            .preguntas__item{
+                border-bottom: 1px solid colors.$oscuro;
+                padding: 0.3rem 0.4rem;
+                
+                .pregunta__titulo{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 1rem;
+                    font-weight: 500;
+
+                    span{
+                        width: 75%;
+                    }
+
+                    .pregunta__titulo__boton{
+                        width: 20px;
+                    }
+                }
+
+                .pregunta__respuesta{
+                    &.respuesta__out{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and ( min-width:992px ){
+
+    .preguntas{
+
+        .preguntas__container{
+            margin: 0 3rem;
+            padding: 1rem;
+            .preguntas__lista{
+    
+                .preguntas__item{
+
+                    .pregunta__titulo{
+                        font-size: 1.5rem;
+                        .pregunta__titulo__boton{
+                            width: 30px;
+                        }
+                    }
+    
+                    .pregunta__respuesta{
+                        p{
+                            font-size: 1.3rem;
+                        }
+                        
+                    }
+                
+                }
+            }
+
+        }
+    }
+
+}
+
+@media only screen and ( min-width:1200px ){
+
+    .preguntas{
+
+        .preguntas__container{
+            margin: 0 5rem;
+            padding: 1rem;
+            .preguntas__lista{
+                }
+        }
+
+        
+    }
+
+}

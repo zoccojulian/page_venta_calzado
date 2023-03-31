@@ -1,0 +1,30 @@
+@use '../util/mixins';
+@use '../util/colors';
+@use './productos_container';
+@use './card';
+
+.sale{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+    .sale__titulo{
+        @include mixins.section-titulo;
+        margin-bottom: 1rem;
+        h2{
+            width: 100%;
+            background-color: colors.$oscuro;
+            text-align: center;
+            padding: 0.5rem 0;
+            b{
+                color: colors.$claro;
+                font-size: 3rem;
+            }
+        }
+        
+    }
+    .productos__link{
+        @include mixins.productos-link(colors.$oscuro)
+    }
+    
+}

@@ -1,0 +1,17 @@
+
+.cargando{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .animacion__charge{
+        width: 150px;
+    }
+    &.cargado{
+        display: none;
+    }
+}

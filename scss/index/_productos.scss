@@ -1,0 +1,23 @@
+@use './productos_container';
+@use './card';
+@use '../util/mixins';
+@use '../util/colors';
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+
+    .productos__titulo{
+        @include mixins.section-titulo;
+    }
+
+    .productos__link{
+        @include mixins.productos-link(colors.$principal)
+    }
+    
+}
+
+@media only screen and ( min-width:576px ){
+}

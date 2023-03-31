@@ -1,0 +1,19 @@
+@use './product_page_container';
+@use './productos_card';
+@use '../util/mixins';
+@use '../util/colors';
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+
+    .productos__titulo{
+        @include mixins.section-titulo;
+        align-items: flex-start;
+        padding-left: 0.5rem;
+    }
+
+    
+}

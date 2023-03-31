@@ -1,0 +1,13 @@
+@use './index/animacion_carga';
+@use './header';
+@use './index/main';
+@use './footer';
+
+
+.body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}

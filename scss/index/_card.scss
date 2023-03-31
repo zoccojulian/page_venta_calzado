@@ -1,0 +1,184 @@
+@use 'sass:color';
+@use '../util/colors';
+
+.productos__card{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 340px;
+    margin-bottom: 1rem;
+    border: 1px solid transparentize(colors.$oscuro,0.6);
+    .card__img{
+        width: 100%;
+        height: 50vh;
+        max-height: 250px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        cursor: pointer;
+        .nuevo__ingreso{
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            background-color: transparentize(colors.$claro, 0.3);
+            width: 170px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .nuevo__ingreso__texto{
+                font-size: 1.3rem;
+                font-weight: 700;
+                color: colors.$principal;
+            }
+        }
+
+        i{
+            position: absolute;
+            color: rgb(204, 45, 45);
+            bottom: 10px;
+            right: 15px;
+            font-size: 2rem;
+        }
+        
+    }
+    .card__talles{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        .talles__titulo{
+            width: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem;
+            background-color: colors.$oscuro;
+            span{
+                font-size: 1.5rem;
+                color: colors.$claro;
+            }
+        }
+        .card__talles__lista{
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            max-width: 337px;
+            .card__talles__item{
+                display: flex;
+                justify-content: center;
+                font-size: 1.7rem;
+                color: transparentize(colors.$oscuro, 0.8);
+                &.en__stock{
+                    border-radius: 100%;
+                    color: colors.$principal;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .card__nombre__producto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            font-size: 3rem;
+            font-weight: 300;
+            color: colors.$oscuro;
+        }
+    }
+
+    .card__precio{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        .precio__antes{
+            span{
+                del{
+                    font-size: 1.5rem;
+                    color: transparentize(colors.$oscuro, 0.5);
+                }
+            }
+        }
+
+        .precio__ahora{
+            span{
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .card__footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        .card__ver{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 190px;
+            height: 50px;
+            border: 1px solid colors.$principal;
+            border-radius: 10px;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+            vertical-align: middle;
+            color: colors.$principal;
+
+            .flecha__button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30px;
+            }
+            
+        }
+    }
+}
+
+@media only screen and ( min-width:576px ){
+    .productos__card{
+        width: 40%;
+        max-width: 270px;
+
+        .card__nombre__producto{
+            span{
+                font-size: 2.5rem;
+            }
+        }
+
+        .card__talles{
+            flex-direction: column;
+            .talles__titulo{
+                width: 100%;
+            }
+        }
+
+        .card__precio{
+            flex-direction: column;
+            gap: 0;
+            .precio__antes{
+                span{
+                    font-size: 1rem;
+                    del{
+                        font-size: 1rem;
+                    }
+                }
+            }
+    
+            .precio__ahora{
+                span{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

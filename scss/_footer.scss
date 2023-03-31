@@ -1,0 +1,176 @@
+@use './util/colors';
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: colors.$principal;
+    padding: 1rem;
+    .footer__empresa{
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        margin-bottom: 1rem;
+        
+        .contactos__whattsapp{
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: 25px;
+            right: 25px;
+            width: 60px;
+            height: 60px;
+            font-size: 2.7rem;
+            color: colors.$claro;
+            a{
+                img{
+                    width: 100%;
+                }
+
+                transition: all 0.3s;
+                &:hover{
+                    transform:scale(1.2);
+                }
+            }
+        }
+
+        .footer__menu{
+            width: 60%;
+            .footer__lista{
+                border-right: 1px solid colors.$claro;
+                padding-left: 1rem;
+                .footer__lista__item{
+                    font-size: 1.3rem;
+                    margin-bottom: 0.5rem;
+                    a{
+                        color: colors.$claro;
+                    }
+
+                    transition: all 0.3s;
+                    &:hover{
+                        filter: drop-shadow( 2px 2px 2px colors.$claro);
+                        transform:scale(1.1);
+                        transform: translateX(10px);
+                    }
+
+                }
+            }
+
+
+        }
+
+        .footer__contactos{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .contactos__titulo{
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                color: colors.$claro;
+                font-weight: 500;
+            }
+            .contactos__container{
+                display: flex;
+                flex-direction: column;
+                gap: 0.7rem;
+                .contact{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    color: colors.$claro;
+                    i{
+                        font-size: 1.5rem;
+                        margin-right: 0.3rem;
+                    }
+                    transition: all 0.3s;
+
+                    &:hover{
+                        filter: drop-shadow( 2px 2px 2px colors.$claro);
+                        transform:scale(1.1);
+                    }
+                }
+            }
+        }
+
+    }
+
+    .footer__dev{
+        span{
+            b{
+                color: colors.$claro;
+            }
+        }
+        .dev__contact{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0.5rem;
+            gap: 0.5rem;
+            a{
+                font-size: 1.5rem;
+                transition: all 0.3s;
+
+                &:hover{
+                    color: colors.$claro;
+                    filter: drop-shadow( 2px 2px 2px colors.$oscuro);
+                    transform:scale(1.1);
+                }
+            }
+
+
+        }
+    }
+}
+
+@media only screen and ( min-width:992px ){
+
+    .footer{
+        .footer__empresa{
+            .footer__menu{
+                width: 50%;
+                .footer__lista{
+                    text-align: center;
+                }
+            }
+            .footer__contactos{
+                width: 50%;
+            }
+        }
+        
+    }
+}
+
+@media only screen and ( min-width:1200px ){
+
+    .footer{
+        .footer__empresa{
+            .footer__menu{
+                .footer__lista{
+                    .footer__lista__item{
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+
+        .footer__dev{
+            span{
+                font-size: 1.5rem;
+                b{
+                    color: colors.$claro;
+                }
+            }
+        }
+        
+    }
+}
+

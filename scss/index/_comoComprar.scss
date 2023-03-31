@@ -1,0 +1,46 @@
+@use '../util/mixins';
+@use '../util/colors';
+@use 'sass:color';
+
+.comoComprar{
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../../assets/img/fondos/fondo01.png');
+    background-position: center;
+    background-size: cover;
+    .comoComprar__titulo{
+        @include mixins.section-titulo;
+    }
+
+    .comoComprar__container{
+        .comoComprar__imagen{
+            @include mixins.imagenes-animadas;
+        }
+    
+    
+        .comoComprar__descripcion{
+            @include mixins.descripcion-secciones;
+        }
+    }
+    
+}
+
+@media only screen and ( min-width:768px ){
+    .comoComprar{
+        
+        .comoComprar__container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .comoComprar__imagen{
+                width: 45%;
+            }
+        }
+    }
+}
+
+
+
