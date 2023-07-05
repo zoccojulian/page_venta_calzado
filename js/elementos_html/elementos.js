@@ -157,6 +157,7 @@ const cardProducto = (producto) => {
     //Habilita el cartel "nuevo ingreso" si hace menos de 1 mes que se subió el producto
     const hoy= new Date();
     const fechaProducto = new Date(producto.fecha_ingreso);
+    console.log(fechaProducto)
     fechaProducto.setDate(fechaProducto.getDate() + 30);
     if((fechaProducto.getTime() - hoy.getTime())<0){
         card.querySelector('.nuevo__ingreso').style.visibility = "hidden";

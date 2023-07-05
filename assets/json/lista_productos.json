@@ -193,7 +193,7 @@
         "talles" : [],
         "precioAntes": "",
         "precioAhora": "",
-        "fecha_ingreso" : "10/03/2022",
+        "fecha_ingreso" : "07/05/2023",
         "carpeta" : "ELITE",
         "fotos": ["Elite01.jpg", "Elite02.jpg", "Elite03.jpg", "Elite04.jpg" ]
     },
@@ -204,7 +204,7 @@
         "talles" : [],
         "precioAntes": "",
         "precioAhora": "",
-        "fecha_ingreso" : "10/03/2022",
+        "fecha_ingreso" : "07/05/2023",
         "carpeta" : "HAWAI",
         "fotos": ["Hawai01.jpg", "Hawai02.jpg", "Hawai03.jpg", "Hawai04.jpg", "Hawai05.jpg"]
     },
@@ -215,7 +215,7 @@
         "talles" : [],
         "precioAntes": "",
         "precioAhora": "",
-        "fecha_ingreso" : "10/03/2022",
+        "fecha_ingreso" : "07/05/2023", 
         "carpeta" : "JAMAICA",
         "fotos": ["Jamaica01.jpg", "Jamaica02.jpg", "Jamaica03.jpg", "Jamaica04.jpg", "Jamaica05.jpg"]
     },
@@ -226,7 +226,7 @@
         "talles" : [],
         "precioAntes": "",
         "precioAhora": "",
-        "fecha_ingreso" : "10/03/2022",
+        "fecha_ingreso" : "07/05/2023",
         "carpeta" : "MAR",
         "fotos": ["Mar01.jpg", "Mar02.jpg", "Mar03.jpg"]
     },
@@ -237,7 +237,7 @@
         "talles" : [36,37,38],
         "precioAntes": "7420",
         "precioAhora": "5600",
-        "fecha_ingreso" : "10/03/2022",
+        "fecha_ingreso" : "05/07/2023",
         "carpeta" : "SIMONA",
         "fotos": ["Simona01.jpg", "Simona02.jpg", "Simona03.jpg", "Simona04.jpg"]
     },
@@ -248,7 +248,7 @@
         "talles" : [35,38],
         "precioAntes": "5900",
         "precioAhora": "3500",
-        "fecha_ingreso" : "10/03/2022",
+        "fecha_ingreso" : "05/07/2023",
         "carpeta" : "ZAIRA",
         "fotos": ["Zaira01.jpg", "Zaira02.jpg", "Zaira03.jpg", "Zaira04.jpg"]
     }
